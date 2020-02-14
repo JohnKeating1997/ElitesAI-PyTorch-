@@ -5,7 +5,7 @@
 ### torch.tensor和torch.Tensor
 在Pytorch中，Tensor和tensor都用于生成新的张量。
 torch.Tensor()是一个类，是默认张量类型torch.FloatTensor()的别名，torch.Tensor([1,2]) 会调用Tensor类的构造函数__init__，生成单精度浮点（float32）类型的张量。
-
+> ```
 > a=torch.Tensor([1,2])
 > a.type()
 > #'torch.FloatTensor'
