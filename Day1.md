@@ -1,4 +1,3 @@
-# 一、线性回归
 ## pytorch内的一些函数
 ### torch.Tensor
 是一种包含单一数据类型元素的多维矩阵，定义了7种CPU tensor和8种GPU tensor类型。
