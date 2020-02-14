@@ -38,10 +38,10 @@ torch.randn(*sizes, out=None) → Tensor
 ### tensor.backward()
 backward()是pytorch中提供的函数，配套有require_grad：
 1.所有的tensor都有.requires_grad属性,可以设置这个属性.
-```
-x = tensor.ones(2,4,requires_grad=True)
+> ```
+> x = tensor.ones(2,4,requires_grad=True)
 
 2.如果想改变这个属性，就调用tensor.requires_grad_()方法：
-```
-x.requires_grad_(False)
+> ```
+> x.requires_grad_(False)
 
