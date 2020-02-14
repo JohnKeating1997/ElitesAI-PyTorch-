@@ -1,4 +1,4 @@
-#一、线性回归
+# 一、线性回归
 本视频用了许多pytorch的函数，由于不是太了解pytorch内的函数，因此查询记录了一下。
 torch.ones()/torch.zeros()，与MATLAB的ones/zeros很接近。初始化生成
 均匀分布
