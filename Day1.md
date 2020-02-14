@@ -1,12 +1,16 @@
 # 一、线性回归
-本视频用了许多pytorch的函数，由于不是太了解pytorch内的函数，因此查询记录了一下。
-torch.ones()/torch.zeros()，与MATLAB的ones/zeros很接近。初始化生成
-均匀分布
+## pytorch内的一些函数
+### 初始化tensor
+torch.ones()/torch.zeros() 与MATLAB的ones/zeros很接近。初始化生成1或者0
+### 均匀分布
 torch.rand(*sizes, out=None) → Tensor
-返回一个张量，包含了从区间[0, 1)的均匀分布中抽取的一组随机数。张量的形状由参数sizes定义。
-标准正态分布
+
+返回一个tensor(张量)，包含了从区间[0,1) 的均匀分布中抽取的一组随机数。张量的形状由参数sizes定义。
+
+### 标准正态分布 random normal distribution
 torch.randn(*sizes, out=None) → Tensor
 返回一个张量，包含了从标准正态分布（均值为0，方差为1，即高斯白噪声）中抽取的一组随机数。张量的形状由参数sizes定义。
+
 torch.mul(a, b)是矩阵a和b对应位相乘，a和b的维度必须相等，比如a的维度是(1, 2)，b的维度是(1, 2)，返回的仍是(1, 2)的矩阵
 torch.mm(a, b)是矩阵a和b矩阵相乘，比如a的维度是(1, 2)，b的维度是(2, 3)，返回的就是(1, 3)的矩阵
 torch.Tensor是一种包含单一数据类型元素的多维矩阵，定义了7种CPU tensor和8种GPU tensor类型。
