@@ -12,7 +12,7 @@ torch.Tensor()是一个类，是默认张量类型torch.FloatTensor()的别名�
 >```
 torch.tensor()是一个函数/方法，函数原型是：
 >```
-torch.tensor(data, dtype=None, device=None, requires_grad=False)
+> torch.tensor(data, dtype=None, device=None, requires_grad=False)
 >```
 其中data可以是：list, tuple, array, scalar等类型。
 torch.tensor()可以从data中的数据部分做拷贝（而不是直接引用），根据原始数据类型生成相应的**torch.LongTensor，torch.FloatTensor，torch.DoubleTensor**。
