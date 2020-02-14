@@ -1,12 +1,12 @@
 # 一、线性回归
 ## pytorch内的一些函数
 ### torch.tensor和torch.Tensor
->>>  a = torch.Tensor([1, 2])
->>>  a
-tensor([1., 2.])
->>> a=torch.tensor([1,2])
->>> a
-tensor([1, 2])
+> a = torch.Tensor([1, 2])
+> a
+#tensor([1., 2.])
+> a=torch.tensor([1,2])
+> a
+#tensor([1, 2])
 
 ### 初始化tensor
 torch.ones()/torch.zeros() 与MATLAB的ones/zeros很接近。初始化生成1或者0
