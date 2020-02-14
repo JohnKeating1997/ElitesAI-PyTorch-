@@ -49,7 +49,9 @@ backward()是pytorch中提供的函数，配套有require_grad：
 [转自](https://www.cnblogs.com/lliuye/p/9451903.html)
 梯度下降法作为机器学习中较常使用的优化算法，其有着三种不同的形式：批量梯度下降（Batch Gradient Descent）、随机梯度下降（Stochastic Gradient Descent）以及小批量梯度下降（Mini-Batch Gradient Descent）。其中小批量梯度下降法也常用在**深度学习**中进行模型的训练。
 ### 1、批量梯度下降（Batch Gradient Descent，BGD）
+$$
 \frac{\Delta J(\theta_0,\theta_1)}{\Delta \theta_j} = \frac{1}{m} \sum_{i=1}^{m} (h_{\theta}(x^{(i)})-y^{(i)})x_j^{(i)}
+$$
 批量梯度下降法是最原始的形式，它是指在每一次迭代时使用所有样本来进行梯度的更新。
   **优点：**
   （1）一次迭代是对所有样本进行计算，此时利用矩阵进行操作，实现了并行。
