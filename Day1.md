@@ -2,7 +2,7 @@
 ## pytorch内的一些函数
 ### torch.tensor和torch.Tensor
 > ```
-a = torch.Tensor([1, 2])
+> a = torch.Tensor([1, 2])
 > a
 >#tensor([1., 2.])
 > a=torch.tensor([1,2])
