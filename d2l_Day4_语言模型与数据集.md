@@ -6,8 +6,8 @@ $$P(w_1, w_2, \ldots, w_T).$$
 这里介绍基于**统计**的语言模型，主要是n元语法（n-gram）
 
 假设序列中的每个词$w_1,w_2,\ldots,w_T$是**依次生成**的，我们有
-$$\begin{aligned}
+$$\begin{align*}
 P(w_1, w_2, \ldots, w_T)
 &= \prod_{t=1}^T P(w_t \mid w_1, \ldots, w_{t-1})\\
 &= P(w_1)P(w_2 \mid w_1) \cdots P(w_T \mid w_1w_2\cdots w_{T-1})
-\end{aligned}$$
+\end{align*}$$
