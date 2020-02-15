@@ -61,7 +61,7 @@ def count_corpus(sentences):
 
 ```
 
-测试一下Vocab
+测试一下Vocab()
 ```
 vocab = Vocab(tokens)   #tokens在前面定义过（略）
 print(list(vocab.token_to_idx.items())[0:10])
