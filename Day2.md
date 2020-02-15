@@ -5,7 +5,7 @@
 >```
 >lines = [re.sub(﻿'[^a-z]+'﻿, ' '﻿, line.strip(﻿)﻿.lower(﻿)﻿) for line in f]﻿
 
-# 上面这行代码的正则部分为
+上面这行代码的正则部分为
 >```
 >re.sub(﻿'[^a-z]+'﻿, ' '﻿, str﻿)﻿
 
