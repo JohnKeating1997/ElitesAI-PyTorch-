@@ -6,11 +6,11 @@ $$P(w_1, w_2, \ldots, w_T).$$
 这里介绍基于**统计**的语言模型，主要是n元语法（n-gram）
 
 假设序列中的每个词$w_1,w_2,\ldots,w_T$是**依次生成**的，我们有
-$$\begin{aligned}
-P(w_1, w_2, \ldots, w_T)
-&= \prod_{t=1}^T P(w_t \mid w_1, \ldots, w_{t-1})\\
-&= P(w_1)P(w_2 \mid w_1) \cdots P(w_T \mid w_1w_2\cdots w_{T-1})
-\end{aligned}$$
+$$P(w_1, w_2, \ldots, w_T)
+&= \prod_{t=1}^T P(w_t \mid w_1, \ldots, w_{t-1})\\$$
+
+$$&= P(w_1)P(w_2 \mid w_1) \cdots P(w_T \mid w_1w_2\cdots w_{T-1})$$
+
 
 例如，一段含有4个词的文本序列的概率
 $$P(w_1, w_2, w_3, w_4) =  P(w_1) P(w_2 \mid w_1) P(w_3 \mid w_1, w_2) P(w_4 \mid w_1, w_2, w_3).$$
