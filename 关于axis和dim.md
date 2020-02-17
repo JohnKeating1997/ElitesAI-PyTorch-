@@ -9,7 +9,7 @@ import numpy as np
 a = np.array([1,2,3,4,5])
 print(type(a))   #<class 'numpy.ndarray'>
 ```
-### axis 与 keepdims
+## axis 与 keepdims
 numpy 中的axis是由外而内，一层一层 **剥** 开他的心的。这和 切片 ,以及len()函数的逻辑是相通的
 ```
 import numpy as np
@@ -51,7 +51,7 @@ a.sum(axis = 1)
 有两层壳```[]```，第二外层```[]```里的最大单位块有两组（因为有两个第二外层[]），第一组是1，2，第二组是3，4，分别对这两个单位块做块与块之间的运算，第一组结果为1+2=3，第二组结果为3+4=7；
 做完加法后本应是```[[3],[7]]```，但是**移除第二外层的壳**```[]```后，原来的两层```[]```变成一层```[]```,所以返回结果为```[3, 7]```。
 
-### size,shape
+## size,shape
 ```size()```：计算数组和矩阵所有数据的个数 
 ```
 a = np.array([[1,2,3],[4,5,6]]) 
@@ -64,7 +64,7 @@ print(np.shape(a))
 #返回(2,3)
 ```
 
-### np.array和np.mat
+## np.array和np.mat
 定位不同，ndarray是**n维数组**，相当于扩展版的list；
 而matrix只是一个**2维矩阵**，方便做矩阵运算，包含在array里，但与array有**不一样的用法**
 
@@ -105,7 +105,7 @@ print(np.dot(c,d))
 #  [ 5  8]]
 ```
 #torch中的Tensor(张量)
-###几个数学概念：
+##几个数学概念：
 
 标量（Scalar）是只有大小，没有方向的量，如1，2，3等
 
@@ -115,7 +115,7 @@ print(np.dot(c,d))
 
 **与张量的关系**：标量是0维的张量，向量是1维的张量，矩阵是2维的张量，张量是n维的，与np.array类似*(由于torch和numpy的特殊关系，似乎numpy中array的操作大部分可以在Tensor上实践)*
 
-### torch.Tensor里的dim
+## torch.Tensor里的dim
 与np.array里的axis类似，也是一层一层剥开他的心。
 
 很多人说 *在二维数组里dim/axis=0代表列，dim/axis=1代表行* ，其实这是对函数里dim/axis的**误解**，是一种反常的思路，会给今后的工作带来记忆上的麻烦。
@@ -132,7 +132,7 @@ tensor([[0.1627, 0.0867, 0.5219, 0.5004],
         [0.8907, 0.5332, 0.5093, 0.2759]])
 torch.Size([3, 4])
 ```
-### 以torch.argmax()为例：
+## 以torch.argmax()为例：
 先测试dim=0
 ```
 b= torch.argmax(a,dim=0)
@@ -171,7 +171,7 @@ dim=1,keepdim tensor([[1],
 dim=1,keepdim torch.Size([3, 1])
 ```
 
-### 以torch.stack()为例
+## 以torch.stack()为例
 
 ```
 import torch
