@@ -1,4 +1,4 @@
-#numpy、torch里的一些数组格式
+# numpy、torch里的一些数组格式
 # np.array
 [关于array数据结构方面的机理链接](https://www.runoob.com/numpy/numpy-ndarray-object.html)
 
